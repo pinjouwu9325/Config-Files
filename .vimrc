@@ -11,6 +11,7 @@ Plug 'jpalardy/vim-slime'
 Plug 'burneyy/vim-snakemake'
 Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 
 " List ends here. Plugins become visible to Vim after this call.
@@ -59,3 +60,5 @@ let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = {'python': {'left': '#'}}
 let NERDDefaultAlign="left"
 
+" Snakemake
+au BufNewFile,BufRead *.snake set syntax=snakemake
