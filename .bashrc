@@ -116,12 +116,19 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# added by Anaconda3 installer
+# export PATH
 export PATH="/home/pinjouwu9325/tools/jre1.8.0_211/bin:/home/pinjouwu9325/tools/cmake-3.15.3-Linux-x86_64/bin:$PATH"
+export PATH="/home/pinjouwu9325/tools/bd-1.02:$PATH"
+export PATH="/home/pinjouwu9325/tools/:$PATH"
 
-
+# Costomized alias
 # Fix tmux color
 alias tmux="TERM=screen-256color tmux"
+# Set Neovim for default
+alias vi="nvim.appimage"
+# bd
+alias bd=". bd -si"
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -137,4 +144,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
