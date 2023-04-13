@@ -3,19 +3,17 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'vim-scripts/indentpython.vim'
-Plug 'Valloric/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
-Plug 'jpalardy/vim-slime'
 Plug 'burneyy/vim-snakemake'
 Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end() 
+
 
 " User define
 set t_Co=256
@@ -50,9 +48,6 @@ let g:syntastic_python_flake8_args = '--ignore=E309,E501,E302,E305'
 highlight SyntasticError ctermbg=lightmagenta ctermfg=black
 highlight SyntasticWarning ctermbg=lightyellow ctermfg=black
 
-" vim-slime
-let g:slime_target = "tmux"
-let g:slime_python_ipython = 1
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
 
 " nerdcommenter
@@ -61,4 +56,4 @@ let g:NERDCustomDelimiters = {'python': {'left': '#'}}
 let NERDDefaultAlign="left"
 
 " Snakemake
-au BufNewFile,BufRead *.snake set syntax=snakemake
+ au BufNewFile,BufRead *.snake set syntax=snakemake

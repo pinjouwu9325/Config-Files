@@ -1,6 +1,8 @@
 # Config files
 * Bash: .bashrc
-* Vim: 
+* Vim/NeoVim: 
   * .vimrc
-  * init.vim #for neovim to import .vimrc
+  * init.vim
+  * lua
+    * init.lua
 * Tmux: .tmux.conf
